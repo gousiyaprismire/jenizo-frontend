@@ -1,0 +1,215 @@
+.about-container {
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* ─────────────────────────────── */
+/* MISSION VISION VALUES */
+/* ─────────────────────────────── */
+
+.mv-section-new {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.mv-box {
+  width: 300px;
+  text-align: center;
+}
+
+.mv-icon-new {
+  width: 320px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.mv-box h3 {
+  font-size: 22px;
+  color: #032b55;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.mv-box p {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ─────────────────────────────── */
+/* WHY DIFFERENT SECTION */
+/* ─────────────────────────────── */
+
+.different-section {
+  width: 85%;
+  margin: auto;
+  text-align: left;
+}
+
+.different-section h2 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #032b55;
+  margin-bottom: 20px;
+}
+
+.different-section p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* ─────────────────────────────── */
+/* ⭐ WHAT WE DO */
+/* ─────────────────────────────── */
+
+.services-mini {
+  margin: 70px auto;
+}
+
+.service-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.service-item {
+  width: 180px;
+  padding: 15px;
+  text-align: center;
+}
+
+.service-item img {
+  width: 200px;
+  margin-bottom: 12px;
+}
+
+.service-item h3 {
+  font-size: 18px;
+  color: #032b55;
+  font-weight: 700;
+}
+
+/* ─────────────────────────────── */
+/* ⭐ COMPANY ACHIEVEMENTS */
+/* ─────────────────────────────── */
+
+.stats-section {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin: 60px 0;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-box h3 {
+  font-size: 36px;
+  color: #032b55;
+  font-weight: 800;
+}
+
+.stat-box p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* ─────────────────────────────── */
+/* PROJECT FORM */
+/* ─────────────────────────────── */
+
+.project-section {
+  width: 90%;
+  margin: 50px auto;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.08);
+}
+
+.project-section h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #032b55;
+  margin-bottom: 25px;
+}
+
+.project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.project-form input,
+.project-form textarea {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.project-form input:focus,
+.project-form textarea:focus {
+  border-color: #032b55;
+  box-shadow: 0px 0px 5px rgba(3,43,85,0.3);
+}
+
+.submit-btn {
+  padding: 12px;
+  background: #032b55;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #054b8e;
+}
+
+.call-btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 12px;
+  background: #28a745;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.call-btn:hover {
+  background: #1e7e34;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .mv-section-new {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .service-icons {
+    gap: 25px;
+  }
+
+  .stats-section {
+    gap: 30px;
+  }
+
+  .project-section {
+    padding: 20px;
+  }
+}

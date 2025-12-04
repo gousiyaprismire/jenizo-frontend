@@ -1,0 +1,122 @@
+/* CONTAINER */
+.career-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f5f5f5;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD */
+.career-card {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 35px 40px;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease;
+}
+
+/* TITLE */
+.career-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.career-subtitle {
+  font-size: 15px;
+  text-align: center;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* FORM */
+.career-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* GROUP */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+/* INPUTS */
+.career-form input,
+.career-form select,
+.career-form textarea {
+  padding: 12px 14px;
+  border: 1.5px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s ease;
+  background: #fafafa;
+}
+
+.career-form input:focus,
+.career-form select:focus,
+.career-form textarea:focus {
+  border-color: #00eaff;
+  box-shadow: 0 0 6px rgba(0, 234, 255, 0.5);
+}
+
+/* BUTTON */
+.career-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 14px;
+  background: black;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.career-btn:hover {
+  background: #00eaff;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 10px rgba(0, 234, 255, 0.5);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .career-card {
+    padding: 25px 20px;
+  }
+
+  .career-title {
+    font-size: 24px;
+  }
+}

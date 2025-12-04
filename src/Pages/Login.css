@@ -1,0 +1,102 @@
+/* Background */
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #001f3f, #007bff);
+  background-size: cover;
+  padding: 20px;
+}
+
+/* Glass Card */
+.login-card {
+  width: 380px;
+  padding: 40px 35px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  color: #fff;
+}
+
+/* Title */
+.login-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.login-subtitle {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom: 25px;
+}
+
+/* Input Group with Icons */
+.input-group {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 45px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.85);
+  transition: 0.3s;
+}
+
+.input-group input:focus {
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 140, 255, 0.6);
+}
+
+/* Icon inside input */
+.input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+/* Login Button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #0099ff, #005ae0);
+}
+
+/* Bottom Link */
+.signup-text {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.signup-text a {
+  color: #00eaff;
+  text-decoration: none;
+  font-weight: bold;
+}

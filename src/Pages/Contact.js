@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
 import "./Contact.css";
 
 export default function Contact() {
@@ -10,37 +9,30 @@ export default function Contact() {
     message: "",
   });
 
-  const [success, setSuccess] = useState("");
+  const [showPopup, setShowPopup] = useState(false);
 
   // Handle input changes
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  // Handle form submit
-  const handleSubmit = async (e) => {
+  // Handle form submit WITHOUT BACKEND
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    try {
-      const res = await axios.post(
-        "http://localhost:8080/api/contact/send",
-        form
-      );
-      setSuccess(res.data);
+    // Show success popup
+    setShowPopup(true);
 
-      // Clear form
-      setForm({
-        name: "",
-        email: "",
-        phone: "",
-        message: "",
-      });
+    // Clear form
+    setForm({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
 
-      // Auto-hide success message
-      setTimeout(() => setSuccess(""), 3000);
-    } catch (error) {
-      alert("Something went wrong! Backend not connected.");
-    }
+    // Auto hide popup after 3 seconds
+    setTimeout(() => setShowPopup(false), 3000);
   };
 
   return (
@@ -49,6 +41,18 @@ export default function Contact() {
       <p className="contact-subtitle">
         We're here to help! Reach out to us using any of the methods below.
       </p>
+
+      {/* POPUP MODAL */}
+      {showPopup && (
+        <div className="popup-overlay">
+          <div className="popup-box">
+            <h3>Message sent successfully!</h3>
+            <button className="popup-btn" onClick={() => setShowPopup(false)}>
+              OK
+            </button>
+          </div>
+        </div>
+      )}
 
       {/* CONTACT INFO */}
       <div className="contact-info">
@@ -64,7 +68,6 @@ export default function Contact() {
           <p>info@jenizo.in</p>
         </div>
 
-        {/* UPDATED LOCATION WITH GOOGLE MAPS LINK */}
         <div className="info-card">
           <i className="fas fa-map-marker-alt info-icon"></i>
           <h3>Office Location</h3>
@@ -93,8 +96,6 @@ export default function Contact() {
       {/* CONTACT FORM */}
       <div className="form-section">
         <h2>Send Us a Message</h2>
-
-        {success && <p className="success-message">{success}</p>}
 
         <form className="contact-form" onSubmit={handleSubmit}>
           <input
@@ -140,3 +141,4 @@ export default function Contact() {
     </div>
   );
 }
+

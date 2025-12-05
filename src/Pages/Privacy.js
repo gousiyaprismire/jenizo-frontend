@@ -156,8 +156,8 @@ export default function Privacy() {
       <h2>12. Contact Us</h2>
       <p>
         <strong>JENIZO IT TECH PVT LTD</strong><br />
-        📧 Email: support@jenizo.com<br />
-        📞 Phone: +91 XXXXX XXXXX<br />
+        📧 Email: info@jenizo.in<br />
+        📞 Phone: +91 8179785211<br />
         📍 Hyderabad, Telangana, India
       </p>
     </div>

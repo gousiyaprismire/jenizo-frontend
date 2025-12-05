@@ -27,7 +27,6 @@ function App() {
       {/* NAVBAR */}
       <nav className="navbar">
         <div className="left">
-          {/* LOGO IMAGE (FROM PUBLIC FOLDER) */}
           <img
             src="/images/j.png"
             alt="Jenizo Logo"
@@ -62,8 +61,8 @@ function App() {
       {/* FOOTER */}
       <footer className="main-footer">
         <div className="footer-left">
-          <span>Terms & Conditions</span>
-          <span>Privacy Policy</span>
+          <Link to="/terms">Terms & Conditions</Link>
+          <Link to="/privacy">Privacy Policy</Link>
         </div>
 
         <div className="footer-right">

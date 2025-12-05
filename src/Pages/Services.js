@@ -9,7 +9,7 @@ export default function Services() {
 
       <div className="services-grid">
 
-        {/* --- Mobile App Development --- */}
+       
         <div className="service-card">
           <img src="/images/appdev.jpeg" alt="Mobile App Development" />
 

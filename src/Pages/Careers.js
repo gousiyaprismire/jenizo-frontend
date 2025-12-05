@@ -12,10 +12,10 @@ export default function Careers() {
           Build, innovate, and grow with a passionate team. At Jenizo, your ideas matter,
           your work creates impact, and your career moves forward with purpose.
         </p>
-        <button className="join-btn">Join Our Team</button>
+        {/* <button className="join-btn">Join Our Team</button> */}
       </section>
 
-      {/* ======== IMAGE BANNER 1 ======== */}
+     
       <div className="image-banner">
         <img src="/images/lap.jpeg" alt="career banner" />
       </div>

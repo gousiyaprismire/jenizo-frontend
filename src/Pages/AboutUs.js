@@ -125,55 +125,16 @@ export default function AboutUs() {
 
       {/* PROJECT INQUIRY FORM */}
       <div className="project-section">
-        <h2>Share Your Project Vision</h2>
+        <h2>Connect with Us</h2>
 
-        <form className="project-form" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
-            name="budget"
-            placeholder="Budget Range (₹50,000 - ₹5,00,000)"
-            value={formData.budget}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
-            name="contact"
-            placeholder="Contact Number"
-            value={formData.contact}
-            onChange={handleChange}
-            required
-          />
-          <textarea
-            name="description"
-            placeholder="Project Description"
-            rows="5"
-            value={formData.description}
-            onChange={handleChange}
-            required
-          ></textarea>
-
-          <button type="submit" className="submit-btn">Submit Project</button>
-          <a href="tel:+919876543210" className="call-btn">
+        <p> Jenizo IT Tech Pvt Ltd</p>
+        <p> Email: info@jenizo.in</p>
+        <p> Contact : +91 8179785211</p>
+        <p> Address: Plot:- 18/2, Huda Techno Enclave Rd, Phase 2, HITECH CITY, PINAKIN Building, 5th Floor , Hyderabad, Telangana 500081.</p>
+        <a href="tel:+919876543210" className="call-btn">
             📞 Call Us Now
           </a>
-        </form>
+        
       </div>
     </div>
   );

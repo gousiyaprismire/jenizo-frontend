@@ -171,8 +171,8 @@ export default function Terms() {
       <h2>16. Contact Information</h2>
       <p>
         <strong>JENIZO IT TECH PVT LTD</strong><br />
-        Email: support@jenizo.com<br />
-        Phone: +91 XXXXX XXXXX<br />
+        Email: info@jenizo.in<br />
+        Phone: +91 8179785211<br />
         Hyderabad, Telangana, India
       </p>
     </div>

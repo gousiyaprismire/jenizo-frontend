@@ -59,7 +59,7 @@ export default function Contact() {
         <div className="info-card">
           <i className="fas fa-phone-alt info-icon"></i>
           <h3>Phone Number</h3>
-          <p>+91 9876543210</p>
+          <p>+91 8179785211</p>
         </div>
 
         <div className="info-card">

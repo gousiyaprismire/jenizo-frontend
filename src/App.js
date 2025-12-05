@@ -6,11 +6,10 @@ import AboutUs from "./Pages/AboutUs";
 import Services from "./Pages/Services";
 import Careers from "./Pages/Careers";
 import Contact from "./Pages/Contact";
-import SignIn from "./Pages/SignIn";
-import Login from "./Pages/Login";
+
 import Terms from "./Pages/Terms";
 import Privacy from "./Pages/Privacy";
-import Appointment from "./Pages/Appointment";
+
 
 import "./App.css";
 
@@ -40,7 +39,7 @@ function App() {
           <li><Link to="/services">Services</Link></li>
           <li><Link to="/careers">Careers</Link></li>
           <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/appointment">Appointment</Link></li>
+         
         </ul>
       </nav>
 
@@ -51,9 +50,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/appointment" element={<Appointment />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/login" element={<Login />} />
+        
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
       </Routes>
